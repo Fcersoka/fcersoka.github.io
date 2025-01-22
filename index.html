@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    </style>
+    <script>
+        function myfunction() {
+            var str = document.querySelectorAll('input')[0].value, len = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (str[i] != ' ') {
+                    len++;
+                }
+            }
+            alert(len);
+        }
+        function clear() {
+        	alert(document.querySelectorAll('input')[0]);
+            document.querySelectorAll('input')[0].value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <input>
+    <button onclick="myfunction()">测量</button>
+    <button onclick="clear()">清空</button>
+</body>
+
+</html>
